@@ -1,9 +1,15 @@
-# 使用CubeMx Keil5 STM32 做不同的应用以及学习
-（使用的开发板是STM32F103RCTx）
-因为合成项目文件很多，所以大部分项目只留下了ioc文件和src文件夹，可以参考CubeMx的配置，和src文件夹中关键性代码。
-####  1.数码管 项目是GPIO应用中一个，从0到9999数值一直增加用数码管展示。
-####  2.key_value 项目使用扫描法获取键值，并将键值显示到数码管上。和键盘内容一样，这个保留了项目压缩包
-####  3.串口通信 项目里面包含了数码管，键盘，串口通信，I2C的应用。串口发送的数字能够使用数码管显示出来，并保存到EEPROM中，按键按下的值能够通过串口发送出来。
-####  4.定时器 使用系统滴答，pwm。按键16控制流水灯 按键15控制计时器 按键14控制pwm制作的呼吸灯
-####  5.温度检测 使用AD和热敏电阻 获取到温度值并显示到数码管
-####  6.温度控制系统 对以上功能的综合设计的项目。能够设置温度报警上下限，并保存。当温度达到温度上下限会进行灯光报警和蜂鸣器报警。
+代码仓库 [GitHub链接](https://github.com/niehen6174/STM32-Summary) 
+cubemx keil 安装包 以及串口通信等等工具 [下载链接](http://seafile.niehen.cn/d/5c2ce6dd2740425fb7db/)
+### STM32F103 CubeMx keil5学习系列教程
+
+1. [STM32 cubemx keil5搭建学习环境](http://niehen.cn/stm32/stm32-%e6%90%ad%e5%bb%ba%e5%ad%a6%e4%b9%a0%e7%8e%af%e5%a2%83/)
+2. [使用STM32 cubemx keil5实现led灯与数码管控制](http://niehen.cn/stm32/stm32-gpio%e5%ba%94%e7%94%a8%e4%b9%8bled%e7%81%af%e3%80%81%e6%95%b0%e7%a0%81%e7%ae%a1/)
+3. [基于STM32 CubeMx keil5实现键盘的应用](http://niehen.cn/stm32/stm32-gpio%e5%ba%94%e7%94%a8%e4%b9%8b%e9%94%ae%e7%9b%98%e4%bd%bf%e7%94%a8/)
+4. [基于STM32 CubeMx keil5实现串口通信 I2C与GPIO综合应用](http://niehen.cn/stm32/stm32-%e4%b8%b2%e5%8f%a3%e9%80%9a%e4%bf%a1%e3%80%81i2c%e4%b8%8egpio%e7%9a%84%e5%ba%94%e7%94%a8/)
+5. [基于STM32 CubeMx keil5实现AD转换获取温度](http://niehen.cn/stm32/stm32-ad%e8%bd%ac%e6%8d%a2%e4%bb%a5%e5%8f%8a%e8%8e%b7%e5%8f%96%e6%b8%a9%e5%ba%a6%e5%80%bc/)
+6. [基于STM32 CubeMx keil5 学习使用I2C](http://niehen.cn/stm32/stm32-i2c%e4%bb%8b%e7%bb%8d%e5%8f%8acubemx%e9%85%8d%e7%bd%ae/)
+7. [基于STM32 CubeMx keil5 学习使用串口通信](http://niehen.cn/stm32/stm32-%e4%b8%b2%e5%8f%a3%e9%80%9a%e4%bf%a1%e4%bb%8b%e7%bb%8d%e5%8f%8acubemx%e9%85%8d%e7%bd%ae/)
+8. [基于STM32 CubeMx keil5应用定时器](http://niehen.cn/stm32/stm32-%e5%ae%9a%e6%97%b6%e5%99%a8%e4%bb%8b%e7%bb%8d%e4%bb%a5%e5%8f%8a%e5%ba%94%e7%94%a8/)
+9. [基于STM32 cubemx keil5学习使用中断](http://niehen.cn/stm32/stm32-%e4%b8%ad%e6%96%ad%e4%bb%8b%e7%bb%8d%e5%8f%8acubemx%e9%85%8d%e7%bd%ae/)
+10. [基于STM32 cubemx keil5综合应用实现温度控制系统](http://niehen.cn/stm32/%e6%b8%a9%e5%ba%a6%e6%8e%a7%e5%88%b6%e7%b3%bb%e7%bb%9f/)
+
